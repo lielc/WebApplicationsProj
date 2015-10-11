@@ -46,7 +46,7 @@ namespace WebAppFinalProj.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "InstructorId,FirstName,LastName,emailAddress,phoneNum")] Instructor instructor)
+        public ActionResult Create([Bind(Include = "InstructorId,FirstName,LastName,EmailAddress,PhoneNum")] Instructor instructor)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace WebAppFinalProj.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "InstructorId,FirstName,LastName,emailAddress,phoneNum")] Instructor instructor)
+        public ActionResult Edit([Bind(Include = "InstructorId,FirstName,LastName,EmailAddress,PhoneNum")] Instructor instructor)
         {
             if (ModelState.IsValid)
             {

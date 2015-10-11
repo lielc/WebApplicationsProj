@@ -19,10 +19,10 @@ namespace WebAppFinalProj.Models
         public string LastName { get; set; }
 
         [Required]
-        public string emailAddress { get; set; }
+        public string EmailAddress { get; set; }
 
         [Required]
-        public string phoneNum { get; set; }
+        public string PhoneNum { get; set; }
 
         public ICollection<Course> Courses { get; set; }
     }
